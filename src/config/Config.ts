@@ -248,8 +248,10 @@ class Config{
         }
     }
 
+    //斷開WS
     public static onWebSocketClosed() {
         console.log("Closed");
+        //Config.WS.close();
 
     }
 
@@ -257,10 +259,7 @@ class Config{
         console.log("Error");
     }
 
-    //斷開WS
-    public static toWebSocketDisconnect() {
-        Config.WS.close();
-    }
+    
 
 
     //=======================

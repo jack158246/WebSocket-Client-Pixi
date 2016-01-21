@@ -208,15 +208,13 @@ var Config = (function () {
                 break;
         }
     };
+    //斷開WS
     Config.onWebSocketClosed = function () {
         console.log("Closed");
+        //Config.WS.close();
     };
     Config.onWebSocketError = function () {
         console.log("Error");
-    };
-    //斷開WS
-    Config.toWebSocketDisconnect = function () {
-        Config.WS.close();
     };
     //=======================
     //生成亂數種子
