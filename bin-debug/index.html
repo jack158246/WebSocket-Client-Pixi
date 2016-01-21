@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+        <meta name="description" content="Pixi.js usage examples." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>Pixi.js Examples</title>
+        <link rel="stylesheet" media="screen" type="text/css" href="css/app.css" />
+
+        <script src="libs/jquery/jquery-1.11.0.min.js"></script>
+        <script src="libs/greensock/TweenMax.min.js"></script>
+        <script src="libs/qrcode/qrcode.min.js"></script>
+
+        <script src="libs/pixi/pixi.min.js"></script>
+        <script src="libs/debug/Stats.js"></script>
+        <script src="libs/pixi/pixi-spine.min.js"></script>
+        <script src="libs/pixi/pixi-extra-filters.min.js"></script>
+
+
+        <style>
+            html,body,#canvas-container{
+                width: 100%;
+                height: 100%;
+            }
+
+            body{
+                background-color: #FFFFFF;
+            }
+
+            #viewport{
+                overflow: hidden;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+
+            #canvas-container{
+                position: absolute;
+                overflow: hidden;
+                transform-style: preserve-3d;
+
+            }
+
+            #qrcode {
+                position: absolute;
+                display: block;
+            }
+
+
+        </style>
+
+    </head>
+    <body>
+    <div id="viewport">
+        <!--viewport这个container就是全部了，后面pixi代码生成的canvas会被添加到这里-->
+        <div class="container" id="canvas-container"></div>
+    </div>
+    <script src="js/App.js"></script>
+    <div id="qrcode"></div><br />
+    </body>
+</html>
