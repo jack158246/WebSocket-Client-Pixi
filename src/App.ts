@@ -18,6 +18,7 @@ module App {
         var pixiMain = new Main;
         console.log("=========")
         console.log("PIXI__JACK__Beta1.1");
+        console.log("PIXI__JACK__Beta1.1");
         console.log("=========")
     });
     //可以放FB 相關
