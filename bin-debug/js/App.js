@@ -729,13 +729,6 @@ var App;
         var pixiMain = new Main;
         console.log("=========");
         console.log("PIXI__JACK__Beta1.1");
-<<<<<<< HEAD
-        console.log("PIXI__JACK__Beta1.2");
-        console.log("PIXI__JACK__Beta1.2");
-        console.log("PIXI__JACK__Beta1.2");
-=======
-        console.log("PIXI__JACK__Beta1.1");
->>>>>>> parent of cc3e4d8... beta1.0
         console.log("=========");
     });
 })(App || (App = {}));
